@@ -123,9 +123,8 @@ Update `SmartCCTV.py` to read the configuration from environment variables:
 EMAIL_SENDER = os.getenv("EMAIL_SENDER")
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
 EMAIL_RECEIVER = os.getenv("EMAIL_RECEIVER")
-```
-
 Set the variables before running the project.
+```
 
 Windows PowerShell:
 
@@ -209,25 +208,6 @@ folder_stegano/dovada_*.png
 
 A valid image produces the extracted security code. A modified or incompatible image may fail the decoding process.
 
-## Current Limitations
-
-- The system detects motion, not the identity or semantic class of an object.
-- The Flask interface does not currently include authentication or HTTPS.
-- LSB steganography is intentionally fragile and should be treated as a tamper-evident mechanism, not as encryption.
-- The current prototype uses one camera and one microphone.
-- E-mail delivery depends on the configured SMTP account and network connection.
-
-## Future Development
-
-- Multi-camera support
-- Authenticated web dashboard
-- Encrypted configuration management
-- Cloud backup for protected evidence
-- Local acoustic alarm
-- Configurable motion-sensitivity controls
-- Event history and recording management
-- Deployment on Raspberry Pi or similar edge hardware
-
 ## Author
 
 **Șova Ioan-Rareș**  
@@ -235,7 +215,3 @@ Faculty of Automatic Control and Computers
 POLITEHNICA Bucharest
 
 Scientific coordinator: **Conf. dr. ing. Ștefan Mocanu**
-
-## Academic Recognition
-
-The project received **Second Prize** at the **2026 Student Scientific Communications Session**, in the section **„Tehnologii Multimedia Evoluate în Aplicații Informatice”**.
